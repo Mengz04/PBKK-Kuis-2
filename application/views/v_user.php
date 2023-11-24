@@ -4,7 +4,7 @@
   </div>
 </header>
 
-<div class="table-agile-info">
+<div class="table-agile-info p-5">
 	<div class="panel panel-default">
 
 		<div class="container-fluid">
@@ -14,7 +14,7 @@
 				<span aria-hidden='true'>&times;</span>
 				</button> </div>";
 			} ?>
-			<br><a href="#add" data-toggle="modal" class="btn btn-primary pull-left"><i class="fa fa-plus"></i> Add New System User</a><br>
+			<!-- <br><a href="#add" data-toggle="modal" class="btn btn-primary pull-left"><i class="fa fa-plus"></i> Add New System User</a><br> -->
 			<table class="table table-hover table-bordered" id="example" ui-options=ui-options="{
 			        &quot;paging&quot;: {
 			          &quot;enabled&quot;: true
