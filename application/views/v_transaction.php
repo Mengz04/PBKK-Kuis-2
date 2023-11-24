@@ -12,8 +12,8 @@
 					<div class="card-title mb-0">List of Books</div>
 				</div>
 				<div class="card-body">
-					<table class="table table-hover table-bordered" id="example" style="background-color: #eef9f0;">
-						<thead style="background-color: #464b58; color:white;">
+				<table class="table table-hover table-bordered" id="example" style="background-color: #eef9f0; border-radius: 10px; overflow: hidden;">
+						<thead style="background-color: orange; color:white;">
 							<tr>
 								<th>#</th>
 								<th>Book Title</th>
@@ -64,8 +64,8 @@
 						Customer's Name : <input type="text" name="buyer_name" class="form-control"><br>
 
 						
-						<table class="table table-hover" id="example" style="background-color: white;">
-						<thead style="background-color:#636363; color:white;">
+						<table class="table table-hover table-bordered" id="example" style="background-color: #eef9f0; border-radius: 10px; overflow: hidden;">
+						<thead style="background-color: orange; color:white;">
 						<tr>
 							<td>#</td>
 							<td>Title</td>
