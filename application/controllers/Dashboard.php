@@ -21,6 +21,7 @@ class Dashboard extends CI_Controller {
 			$data['sys_user'] = $this->M_Dashboard->get_sys_user();
 			$data['book_stock'] = $this->M_Dashboard->get_book_stock();
 			$data['sales_p'] = $this->M_Dashboard->get_sales_p();
+			$data['get_book']=$this->M_Dashboard->get_book();
 			$this->load->view('template', $data);
 
 		} else {

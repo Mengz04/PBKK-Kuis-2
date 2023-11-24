@@ -15,6 +15,7 @@ class Transaction extends CI_Controller {
 		$data['get_book']=$this->book->get_book();
 		$data['content']="v_transaction";
 		$this->load->view('template', $data, FALSE);
+
 	}
 
 	public function addcart($id)

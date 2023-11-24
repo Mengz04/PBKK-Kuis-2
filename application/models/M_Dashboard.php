@@ -46,5 +46,12 @@ class M_Dashboard extends CI_Model {
 					    ->row();
 	}
 
+	public function get_book()
+	{
+		$tm_book=$this->db->join('book_category','book_category.category_code=book.category_code')
+		->get('book')->result();
+		return $tm_book;
+	}
+
 }
 ?>

@@ -119,7 +119,112 @@
 		</div>
 	</section>
 		<?php } elseif (($this->session->userdata('level') == 'Customer')) {?>
-			
+			<div class="d-flex flex-wrap justify-content-center">
+				<div class="px-5 py-3">
+					<p>Educational</p>
+					<table class="table table-hover table-bordered" id="example" style="background-color: #eef9f0;">
+						<thead style="background-color: #464b58; color:white;">
+							<tr>
+								<th>Book Title</th>
+								<th>Book Cover</th>
+								<th>Price</th>
+								<th>Stock</th>
+								<th>Act.</th>
+							</tr>
+
+						</thead>
+						<tbody style="background-color: white;">
+							<?php $no=0; foreach ($get_book as $book): if ($no == 6) break; if($book->category_name != "Educational") continue; $no++;?>
+								<tr>
+									<td><?=$book->book_title?></td>
+									<td><img src="<?=base_url('assets/gambar/'.$book->book_img)?>" style="width:40px"></td>
+									<td class="text-right">$<?=$book->price?></td>
+									<td class="text-right"><?=$book->stock?></td>
+									<td class="text-center"><a href="<?=base_url('index.php/transaction/addcart/'.$book->book_code)?>"><button class="btn btn-outline-primary rounded-0 btn-sm"><span class="fa fa-shopping-cart" aria-hidden="true"></span></button></a></td>
+								</tr>
+							<?php endforeach ?>
+						</tbody>
+					</table>
+				</div>
+				<div class="px-5 py-3">
+					<p>Fiction</p>
+					<table class="table table-hover table-bordered" id="example" style="background-color: #eef9f0;">
+						<thead style="background-color: #464b58; color:white;">
+							<tr>
+								<th>Book Title</th>
+								<th>Book Cover</th>
+								<th>Price</th>
+								<th>Stock</th>
+								<th>Act.</th>
+							</tr>
+
+						</thead>
+						<tbody style="background-color: white;">
+							<?php $no=0; foreach ($get_book as $book): if ($no == 6) break; if($book->category_name != "Fiction") continue; $no++;?>
+								<tr>
+									<td><?=$book->book_title?></td>
+									<td><img src="<?=base_url('assets/gambar/'.$book->book_img)?>" style="width:40px"></td>
+									<td class="text-right">$<?=$book->price?></td>
+									<td class="text-right"><?=$book->stock?></td>
+									<td class="text-center"><a href="<?=base_url('index.php/transaction/addcart/'.$book->book_code)?>"><button class="btn btn-outline-primary rounded-0 btn-sm"><span class="fa fa-shopping-cart" aria-hidden="true"></span></button></a></td>
+								</tr>
+							<?php endforeach ?>
+						</tbody>
+					</table>
+				</div>
+				<div class="px-5 py-3">
+					<p>Fantasy</p>
+					<table class="table table-hover table-bordered" id="example" style="background-color: #eef9f0;">
+						<thead style="background-color: #464b58; color:white;">
+							<tr>
+								<th>Book Title</th>
+								<th>Book Cover</th>
+								<th>Price</th>
+								<th>Stock</th>
+								<th>Act.</th>
+							</tr>
+
+						</thead>
+						<tbody style="background-color: white;">
+							<?php $no=0; foreach ($get_book as $book): if ($no == 6) break; if($book->category_name != "Fantasy") continue; $no++;?>
+								<tr>
+									<td><?=$book->book_title?></td>
+									<td><img src="<?=base_url('assets/gambar/'.$book->book_img)?>" style="width:40px"></td>
+									<td class="text-right">$<?=$book->price?></td>
+									<td class="text-right"><?=$book->stock?></td>
+									<td class="text-center"><a href="<?=base_url('index.php/transaction/addcart/'.$book->book_code)?>"><button class="btn btn-outline-primary rounded-0 btn-sm"><span class="fa fa-shopping-cart" aria-hidden="true"></span></button></a></td>
+								</tr>
+							<?php endforeach ?>
+						</tbody>
+					</table>
+				</div>
+				<div class="px-5 py-3">
+					<p>Horror</p>
+					<table class="table table-hover table-bordered" id="example" style="background-color: #eef9f0;">
+						<thead style="background-color: #464b58; color:white;">
+							<tr>
+								<th>Book Title</th>
+								<th>Book Cover</th>
+								<th>Price</th>
+								<th>Stock</th>
+								<th>Act.</th>
+							</tr>
+
+						</thead>
+						<tbody style="background-color: white;">
+							<?php $no=0; foreach ($get_book as $book): if ($no == 6) break; if($book->category_name != "Horror") continue; $no++;?>
+								<tr>
+									<td><?=$book->book_title?></td>
+									<td><img src="<?=base_url('assets/gambar/'.$book->book_img)?>" style="width:40px"></td>
+									<td class="text-right">$<?=$book->price?></td>
+									<td class="text-right"><?=$book->stock?></td>
+									<td class="text-center"><a href="<?=base_url('index.php/transaction/addcart/'.$book->book_code)?>"><button class="btn btn-outline-primary rounded-0 btn-sm"><span class="fa fa-shopping-cart" aria-hidden="true"></span></button></a></td>
+								</tr>
+							<?php endforeach ?>
+						</tbody>
+					</table>
+				</div>
+			</div>
 			
 			<!-- <section class="dashboard-counts no-padding-bottom">
 			<div class="container-fluid">

@@ -28,7 +28,7 @@
 						<tbody style="background-color: white;">
 							<?php $no=0; foreach ($get_book as $book): $no++; ?>
 								<tr>
-								
+
 									<td><?=$no?></td>
 									<td><?=$book->book_title?></td>
 									<td><img src="<?=base_url('assets/gambar/'.$book->book_img)?>" style="width:40px"></td>
