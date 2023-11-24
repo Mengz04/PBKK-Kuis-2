@@ -15,10 +15,10 @@
 		<br>
 		<div class="card rounded-0 shadow">
 			<div class="card-header">
-				<a href="#add" data-toggle="modal" class="btn btn-primary btn-sm rounded-0 pull-right"><i class="fa fa-plus"></i> Add New Book</a>
+				<a href="#add" data-toggle="modal" class="btn btn-warning btn-sm rounded-3 p-2 pull-right" style="border: none; color: white;"><i class="fa fa-plus"></i> Add New Book</a>
 			</div>
 			<div class="card-body">
-				<table class="table table-hover table-bordered" id="example" ui-options=ui-options="{
+				<table class="table table-hover table-bordered" id="example" style="background-color: #eef9f0; border-radius: 10px; overflow: hidden;" ui-options=ui-options="{
 					&quot;paging&quot;: {
 					&quot;enabled&quot;: true
 					},
@@ -28,7 +28,7 @@
 					&quot;sorting&quot;: {
 					&quot;enabled&quot;: true
 					}}">
-					<thead style="background-color: #464b58; color:white;">
+					<thead style="background-color: orange; color:white;">
 						<tr>
 							<td>#</td>
 							<td>Book Title</td>

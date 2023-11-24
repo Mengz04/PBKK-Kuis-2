@@ -454,7 +454,7 @@ nav.side-navbar ul li a {
 }
 
 nav.side-navbar ul li a:hover {
-  background: orange;
+  background: rgba(255, 166, 0, 0.395);
   border-left: 4px solid gray;
   color: #fff;
 }
@@ -3538,8 +3538,10 @@ a > code {
   background-color: orange ; 
 }
 
+
 .lock-color {
 	background: orange;
+  color: white !important;
 }
 
 @media (min-width: 576px) {
