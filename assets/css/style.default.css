@@ -15,7 +15,8 @@ https://bootstrapious.com/p/admin-template
 * ==========================================================
 */
 body {
-  overflow-x: hidden;
+  overflow: hidden;
+  height: 100vh;
 }
 
 a,
@@ -1867,6 +1868,10 @@ select option {
 *     FORM PAGE
 * ==========================================================
 */
+
+.page-trans{
+  
+}
 .forms p {
   font-size: 0.9em;
   color: #555;
@@ -1890,6 +1895,11 @@ select option {
 *     LOGIN PAGE
 * ==========================================================
 */
+
+.form{
+  
+}
+
 .login-page {
   position: relative;
 }
@@ -1901,7 +1911,8 @@ select option {
   display: block;
   z-index: -1;
   background: url(../img/login-bg.jpg);
-  background-size:contain;
+  background-size: contain;
+  background-position: center;
   z-index: 1;
   position: absolute;
   top: 0;
@@ -1922,9 +1933,11 @@ select option {
   border-radius: 5px;
   overflow: hidden;
   margin-bottom: 50px;
-  border: 5px #FA824C solid;
   display: flex;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.443);
+  /* background: transparent; */
+  filter: opacity(.9);
 }
 
 .login-page .form-holder .info,
