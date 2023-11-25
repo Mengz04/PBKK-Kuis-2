@@ -100,7 +100,7 @@
 
 		  <div class="row py-1">
 	        
-	        <!-- Item -->
+	        <!--
 	        <div class="col-xl-4 col-sm-4">
 				<div class="card rounded-0 shadow">
 					<div class="card-body">
@@ -113,7 +113,7 @@
 						</div>
 					</div>
 				</div>
-	        </div>
+	        </div> -->
 	        
 		  </div>
 		</div>

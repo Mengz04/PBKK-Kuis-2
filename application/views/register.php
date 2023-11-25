@@ -44,18 +44,21 @@
                   <form method="post" class="form-validate" action="<?php echo base_url('index.php/admin/proses_register') ?>">
                   <h3 class="fw-bold text-white text-center mb-4">Creating a New Account</h3>
                   <div class="form-group">
-                      <input id="fullname" type="text" name="fullname" required data-msg="Please enter your Name" class="input-material">
-                      <label for="login-fullname" class="label-material">Full Name</label>
+                    <label for="login-fullname" class="label-material text-white">Full Name</label>
+                      <input id="fullname" type="text" name="fullname" required data-msg="Please enter your Name" class="input-material p-2 rounded">
+                      
                     </div>
 
                     <div class="form-group">
-                      <input id="username" type="text" name="username" required data-msg="Please enter your username" class="input-material">
-                      <label for="login-username" class="label-material">Username</label>
+                      <label for="login-username" class="label-material text-white">Username</label>
+                      <input id="username" type="text" name="username" required data-msg="Please enter your username" class="input-material p-2 rounded">
+                      
                     </div>
                     
                     <div class="form-group">
-                      <input id="password" type="password" name="password" required data-msg="Please enter your password" class="input-material">
-                      <label for="login-password" class="label-material">Password</label>
+                      <label for="login-password" class="label-material text-white">Password</label>
+                      <input id="password" type="password" name="password" required data-msg="Please enter your password" class="input-material p-2 rounded">
+                      
                     </div>
                       <div class="form-group">
                       <label for="level" class="control-label text-white">User Role</label>

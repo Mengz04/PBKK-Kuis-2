@@ -53,12 +53,12 @@
                   </div>
 
                     <div class="form-group">
-                      <input id="username" type="text" name="username" required data-msg="Please enter your username" class="input-material">
-                      <label for="login-username" class="label-material">Username</label>
+                      <label for="login-username" class="label-material text-white">Username</label>
+                      <input id="username" type="text" name="username" required data-msg="Please enter your username" class="input-material p-2 rounded">
                     </div>
                     <div class="form-group">
-                      <input id="password" type="password" name="password" required data-msg="Please enter your password" class="input-material">
-                      <label for="login-password" class="label-material">Password</label>
+                      <label for="login-password" class="label-material text-white">Password</label>
+                      <input id="password" type="password" name="password" required data-msg="Please enter your password" class="input-material p-2 rounded">
                     </div>
                     <div class="d-flex flex-column align-items-center gap-5">
                       
