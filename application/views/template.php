@@ -30,11 +30,12 @@
       <!-- Main Navbar-->
       <header class="header">
         <nav class="navbar">
-          <div class="container-fluid">
+          <div class="container-fluid py-3">
             <div class="navbar-holder d-flex align-items-center justify-content-between">
               <!-- Navbar Header-->
-              <div class="navbar-header">
-                <!-- Toggle Button--><a id="toggle-btn" href="#" class="menu-btn active"><span></span><span></span><span></span></a>
+              <div class="navbar-header d-flex flex-row align-items-center justify-content-center" style="gap: 10px;">
+                <!-- Toggle Button--><a id="toggle-btn" href="#" class="menu-btn active"><div style="background-image:url(<?php echo base_url('/assets/gambar/next.png')?>); height: 30px; width: 30px; background-size: cover;"></div></a>
+                <!-- icon --> <div class="rounded-circle" style="background-image: url(<?php echo base_url('/assets/gambar/smooth.png')?>); height:50px; width: 50px; background-size: cover; border : 2px orange solid;"></div>
                 <!-- Navbar Brand --><a href="#" class="navbar-brand">
                   <div class="brand-text brand-big"><span>Smooth Brains Book Store</span></div>
                   <div class="brand-text brand-small">Smooth Brains Book Store</div></a>
@@ -49,69 +50,76 @@
           </div>
         </nav>
       </header>
+      
       <div class="page-content d-flex"> 
         <!-- Side Navbar -->
-        <nav class="side-navbar text-light bg-dark">
+        <nav class="side-navbar text-dark bg-white">
           <!-- Sidebar Header-->
           <div class="sidebar-header d-flex align-items-center">
             <div class="avatar"><img src="<?php echo base_url(); ?>assets/img/avatar.png" alt="User Icon" class="img-fluid rounded-circle"></div>
             <div class="title">
-              <h1 class="h4 text-light"><?= $this->session->userdata('fullname') ?></h1>
+              <h1 class="h4 text-dark"><?= $this->session->userdata('fullname') ?></h1>
               <p><?= $this->session->userdata('level') ?></p>
             </div>
           </div>
           <!-- Sidebar Navidation Menus-->
           <hr>
           <ul class="list-unstyled">
-            <li>
-                <a class="active" href="<?php echo base_url('index.php/dashboard');?>">
+                <li class="orange-hvr">
+                <a class="active sidebar-title sidebar-dashboard" href="<?php echo base_url('index.php/dashboard');?>">
                     <i class="fa fa-compass"></i>
                     <span>Dashboard</span>
-                </a></li>
+                </a>
+              </li>
                 <?php 
                     if ($this->session->userdata('level') == 'admin') {
                         echo'
                         
                           <li>
-                              <a href="'.base_url('index.php/category').'">
+                              <a class="sidebar-title sidebar-category" href="'.base_url('index.php/category').'">
                                   <i class="fa fa-bookmark"></i>
                                   <span>Category</span>
                               </a>
                           </li>
                           <li>
-                            <a href="'.base_url('index.php/book').'">
+                            <a class="sidebar-title sidebar-books" href="'.base_url('index.php/book').'">
                                 <i class="fa fa-book"></i>
                                 <span>Books</span>
                             </a>
                         </li>
                           <li>
-                            <a href="'.base_url('index.php/transaction').'">
+                            <a class="sidebar-title sidebar-transaction" href="'.base_url('index.php/transaction').'">
                                 <i class="fa fa-dollar"></i>
                                 <span>Transaction</span>
                             </a>
                           </li>
                           <li>
-                            <a href="'.base_url('index.php/history').'">
+                            <a class="sidebar-title sidebar-history" href="'.base_url('index.php/history').'">
                                 <i class="fa fa-history"></i>
                                 <span>History</span>
                             </a>
                           </li>
                           
                           <li>
-                            <a href="'.base_url('index.php/user').'">
+                            <a class="sidebar-title sidebar-usermng" href="'.base_url('index.php/user').'">
                                 <i class="fa fa-users"></i>
                                 <span>User Management</span>
                             </a>
                           </li>';
                               } elseif ($this->session->userdata('level') == 'Customer') {
                                  echo'<li>
-                              <a href="'.base_url('index.php/transaction').'">
+                              <a class="sidebar-title sidebar-transaction" href="'.base_url('index.php/transaction').'">
                                   <i class="fa fa-search"></i>
                                   <span>Explore</span>
                               </a>
                           </li>';                            
                     }
                 ?>
+                <li>
+                  <div style="height : 110px; margin: 10% 7px 0 7px; border-radius: 13px; background-size: cover; background-image: url(<?php echo base_url(); ?>assets/img/book1.jpg); border: 2px solid #ffa5008c;">
+
+                  </div>
+                </li>
           </ul>
         </nav>
         <div class="content-inner">
@@ -131,5 +139,6 @@
     <script src="<?php echo base_url(); ?>assets/vendor/jquery-validation/jquery.validate.min.js"></script>
     <!-- Main File-->
     <script src="<?php echo base_url(); ?>assets/js/front.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/ahda.js"></script>
   </body>
 </html>

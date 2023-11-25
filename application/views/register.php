@@ -23,19 +23,11 @@
   </head>
   <body>
     <div class="page login-page">
-      <div class="container d-flex align-items-center">
-        <div class="form-holder has-shadow">
-          <div class="row">
-            <!-- Logo & Information Panel-->
-            <div class="col-lg-6">
-              <div class="info ">
-                <div class="d-flex flex-column h-100 justify-content-center align-items-center">
-                    <h1>Registration Form</h1>
-                </div>
-              </div>
-            </div>
+      <div class="container d-flex align-items-center justify-content-center">
+        <div class="form-holder has-shadow" >
+          <div class="row" style="width: 100%">
             <!-- Form Panel    -->
-            <div class="col-lg-6 bg-white">
+            <div class="col-lg-12">
               <div class="form d-flex align-items-center">
                 <div class="content">
                   <?php
@@ -50,7 +42,7 @@
                         } 
                     ?>
                   <form method="post" class="form-validate" action="<?php echo base_url('index.php/admin/proses_register') ?>">
-                  <h3 class="fw-bold text-muted text-center mb-4">Creating a New Account</h3>
+                  <h3 class="fw-bold text-white text-center mb-4">Creating a New Account</h3>
                   <div class="form-group">
                       <input id="fullname" type="text" name="fullname" required data-msg="Please enter your Name" class="input-material">
                       <label for="login-fullname" class="label-material">Full Name</label>
@@ -66,14 +58,14 @@
                       <label for="login-password" class="label-material">Password</label>
                     </div>
                       <div class="form-group">
-                      <label for="level" class="control-label">User Role</label>
+                      <label for="level" class="control-label text-white">User Role</label>
                       <select type="text" name="level" required class="custom-select">
-                          <option>user</option>
+                          <option>Customer</option>
                       </select> 
                     </div>
-                    <div class="d-flex justify-content-end align-items-center">
-                      <a href="<?php echo base_url('index.php/admin/index') ?>" class="text-decoration-none mr-3">Already have an account? Login here</a>
-                      <input type="submit" name="submit" class="btn btn-primary rounded-0" value="Register">
+                    <div class="d-flex flex-column justify-content-end align-items-center">
+                      <input type="submit" name="submit" class="btn btn-primary" value="Register" style="padding: 10px 20px; border-radius: 15px; width: 100%; background-color: orange; border: black;">
+                      <a href="<?php echo base_url('index.php/admin/index') ?>" class="text-decoration-none mr-3 mt-3" style="color: orange;">Already have an account? Login here</a>
                     </div>
                     <!-- This should be submit button but I replaced it with <a> for demo purposes-->
                   </form>

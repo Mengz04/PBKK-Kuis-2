@@ -14,9 +14,6 @@ https://bootstrapious.com/p/admin-template
 *     GENERAL STYLES
 * ==========================================================
 */
-body {
-  overflow-x: hidden;
-}
 
 a,
 i,
@@ -228,6 +225,7 @@ input {
 .bg-orange {
   background: #ffc36d !important;
   color: #fff;
+  color: orange;
 }
 
 .bg-orange:hover {
@@ -456,8 +454,8 @@ nav.side-navbar ul li a {
 }
 
 nav.side-navbar ul li a:hover {
-  background: #1c7be2;
-  border-left: 4px solid #3b25e6;
+  background: rgba(255, 166, 0, 0.395);
+  border-left: 4px solid gray;
   color: #fff;
 }
 
@@ -630,16 +628,15 @@ nav.side-navbar.shrinked .sidebar-header .title {
 * ==========================================================
 */
 nav.navbar {
-  background-color: #032952;
-  background-image: linear-gradient(62deg, #032952 0%, #421573 50%, #033160 100%);
+  background-color: white;
 
   padding-top: 3px;
   padding-bottom: 5px;
-  color: #fff;
+  color: black;
   position: relative;
   border-radius: 0;
   -webkit-box-shadow: 2px 2px 2px #032952;
-  box-shadow: 2px 2px 2px #032952;
+  box-shadow: 2px 2px 2px orange;
   z-index: 10;
   padding-left: 0;
   padding-right: 0;
@@ -689,61 +686,44 @@ nav.navbar .menu-btn {
   transition: all 0.7s;
 }
 
-nav.navbar .menu-btn span {
-  width: 20px;
-  height: 2px;
-  background: #fff;
-  display: block;
-  margin: 4px auto 0;
+nav.navbar .menu-btn div {
   -webkit-transition: all 0.3s cubic-bezier(0.81, -0.33, 0.345, 1.375);
   transition: all 0.3s cubic-bezier(0.81, -0.33, 0.345, 1.375);
 }
 
-nav.navbar .menu-btn span:nth-of-type(2) {
-  position: relative;
-  width: 35px;
+nav.navbar .menu-btn div {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
-nav.navbar .menu-btn span:nth-of-type(2)::before,
-nav.navbar .menu-btn span:nth-of-type(2)::after {
+nav.navbar .menu-btn div::before,
+nav.navbar .menu-btn div::after {
   content: "";
-  width: 6px;
-  height: 2px;
-  display: block;
-  background: #fff;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  position: absolute;
-  top: 2px;
-  left: 0;
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
 }
 
-nav.navbar .menu-btn span:nth-of-type(2)::after {
+nav.navbar .menu-btn div::after {
   -webkit-transform: rotate(145deg);
   transform: rotate(145deg);
-  position: absolute;
-  top: -2px;
-  left: 0;
 }
 
-nav.navbar .menu-btn.active span:first-of-type {
+/* nav.navbar .menu-btn.active div {
   -webkit-transform: translateY(12px);
   transform: translateY(12px);
-}
+} */
 
-nav.navbar .menu-btn.active span:nth-of-type(2) {
+nav.navbar .menu-btn.active div {
   -webkit-transform: none;
   transform: none;
 }
 
-nav.navbar .menu-btn.active span:last-of-type {
+/* nav.navbar .menu-btn.active div {
   -webkit-transform: translateY(-12px);
   transform: translateY(-12px);
-}
+} */
 
 nav.navbar .nav-link {
   position: relative;
@@ -764,6 +744,10 @@ nav.navbar .nav-link.language span {
 
 nav.navbar .nav-link.logout i {
   margin-left: 10px;
+}
+
+nav.navbar .nav-link.logout:hover{
+  background-color: orange;
 }
 
 nav.navbar .nav-menu {
@@ -1867,6 +1851,10 @@ select option {
 *     FORM PAGE
 * ==========================================================
 */
+
+.page-trans{
+  
+}
 .forms p {
   font-size: 0.9em;
   color: #555;
@@ -1890,6 +1878,11 @@ select option {
 *     LOGIN PAGE
 * ==========================================================
 */
+
+.form{
+  
+}
+
 .login-page {
   position: relative;
 }
@@ -1901,7 +1894,8 @@ select option {
   display: block;
   z-index: -1;
   background: url(../img/login-bg.jpg);
-  background-size:contain;
+  background-size: contain;
+  background-position: center;
   z-index: 1;
   position: absolute;
   top: 0;
@@ -1922,9 +1916,11 @@ select option {
   border-radius: 5px;
   overflow: hidden;
   margin-bottom: 50px;
-  border: 5px #FA824C solid;
   display: flex;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.443);
+  /* background: transparent; */
+  filter: opacity(.9);
 }
 
 .login-page .form-holder .info,
@@ -3536,6 +3532,16 @@ a > code {
 
 .card-deck .card {
   margin-bottom: 15px;
+}
+
+.orange-hvr:hover  {
+  background-color: orange ; 
+}
+
+
+.lock-color {
+	background: orange;
+  color: white !important;
 }
 
 @media (min-width: 576px) {

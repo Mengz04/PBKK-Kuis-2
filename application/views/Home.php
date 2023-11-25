@@ -122,8 +122,8 @@
 			<div class="d-flex flex-wrap justify-content-center">
 				<div class="px-5 py-3">
 					<p>Educational</p>
-					<table class="table table-hover table-bordered" id="example" style="background-color: #eef9f0;">
-						<thead style="background-color: #464b58; color:white;">
+					<table class="table table-hover table-bordered" id="example" style="background-color: #eef9f0; border-radius: 10px; overflow: hidden;">
+						<thead style="background-color: orange; color:white;">
 							<tr>
 								<th>Book Title</th>
 								<th>Book Cover</th>
@@ -148,8 +148,8 @@
 				</div>
 				<div class="px-5 py-3">
 					<p>Fiction</p>
-					<table class="table table-hover table-bordered" id="example" style="background-color: #eef9f0;">
-						<thead style="background-color: #464b58; color:white;">
+					<table class="table table-hover table-bordered" id="example" style="background-color: #eef9f0; border-radius: 10px; overflow: hidden;">
+						<thead style="background-color: orange; color:white;">
 							<tr>
 								<th>Book Title</th>
 								<th>Book Cover</th>
@@ -174,8 +174,8 @@
 				</div>
 				<div class="px-5 py-3">
 					<p>Fantasy</p>
-					<table class="table table-hover table-bordered" id="example" style="background-color: #eef9f0;">
-						<thead style="background-color: #464b58; color:white;">
+					<table class="table table-hover table-bordered" id="example" style="background-color: #eef9f0; border-radius: 10px; overflow: hidden;">
+						<thead style="background-color: orange; color:white;">
 							<tr>
 								<th>Book Title</th>
 								<th>Book Cover</th>
@@ -200,8 +200,8 @@
 				</div>
 				<div class="px-5 py-3">
 					<p>Horror</p>
-					<table class="table table-hover table-bordered" id="example" style="background-color: #eef9f0;">
-						<thead style="background-color: #464b58; color:white;">
+					<table class="table table-hover table-bordered" id="example" style="background-color: #eef9f0; border-radius: 10px; overflow: hidden;">
+						<thead style="background-color: orange; color:white;">
 							<tr>
 								<th>Book Title</th>
 								<th>Book Cover</th>
